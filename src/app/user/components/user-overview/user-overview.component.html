@@ -1,0 +1,11 @@
+<mat-tab-group>
+  <mat-tab label="First">
+    <mat-card>
+      <ng-container *ngFor="let item of mojeData">
+        <div>{{ item.name }} {{ item.surname }}</div>
+      </ng-container>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Second"> <app-user-form></app-user-form> </mat-tab>
+  <mat-tab label="Third"> <app-user></app-user> </mat-tab>
+</mat-tab-group>
